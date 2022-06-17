@@ -91,10 +91,12 @@
       margin-right: 50px;}
 .contacts-items{
       display: flex;
+      justify-content: center;
       padding-left: 0;
       margin-top: 0;
       margin-bottom: 0;
       margin-left: auto;
+      
 align-items: center;}
 .contacts-items>.item:not(:first-child){
       margin-left: 50px;}
@@ -128,8 +130,7 @@ align-items: center;}
       line-height: 1.36;
       text-align: center;
       letter-spacing: 0.06em;
-      text-transform: uppercase;
-      } 
+      text-transform: uppercase;} 
           
     /* buttons */
 
@@ -187,13 +188,11 @@ align-items: center;}
 .features .list .item:not(:last-child){
       margin-right: 30px;}
 .features-icons{
-      display: block;
+      display: flex;
       height: 120px;
-      text-align: center;
-      padding-top: 25px;
-      padding-bottom: 25px;                     
+      justify-content: center;               
       margin-bottom: 30px;
-
+      align-items: center;
       background-color: var(--secondary-bg-color);
       border-radius: 4px;}
 
@@ -255,18 +254,21 @@ justify-content: space-between;}
       justify-content: space-between;
       list-style: none;}
 .socials-item{
-      display: block;
+      display: flex;
       width: 44px;
       height: 44px;
-      padding: 12px;
+      justify-content: center;
+      align-items: center;
       border-radius: 50%;
-      border: 1px transparent;
-      text-align: center;
-      cursor: pointer;}
+      border: 1px transparent;     
+      cursor: pointer;}    
 .socials-icon {
-      display: block;
+      display: flex;    
+      padding: 12px;
       fill: var(--primary-text-color);
-      text-decoration: none;}           
+      text-decoration: none;} 
+.socials-item:not(:last-child) {
+      margin-right: 10px;}            
 .socials-icon:hover,
 .socials-icon:focus{
       fill: var(--primary-white-color);}
@@ -287,20 +289,23 @@ justify-content: space-between;}
       justify-content: space-between;
       align-items: center;}
 .clients .list .item {
-      display: block;
+      display: flex;
       width: 170px;
       height: 92px;
-      text-align: center;
+      justify-content: center;
+      align-items: center;
 
       background-color: var(--primary-white-color);
       border: 1px solid var(--primary-text-color);
       border-radius: 4px;}
 .clients-icon {
       fill: var(--primary-text-color);
-      text-decoration: none;}
-.clients-icon .icon {
-      margin-top: 16px;
-      margin-bottom: 16px;}
+      text-decoration: none;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 32px;
+      padding-right: 32px;}
+
 .clients-icon:hover,
 .clients-icon:focus {
       fill: var(--accent-color);}
